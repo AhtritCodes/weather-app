@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather App </title>
+		<link rel="stylesheet" href="../styles/utils.css">
+	</head>
+	<style>
+		.title{
+			text-align: center;
+			color: blueviolet;
+			font-family: sans-serif;
+			font-size: 30px;
+		}
+		.temp{
+			font-size: 25px;
+			font-family: monospace;
+			color: darkred;
+			margin: 10px;
+		}
+
+		.cityImage{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<body>
+		<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #fff; border: 3px solid #000; width: 60%; height: 60%; margin: 10% auto;">
+			<h1 style="color: red;">INDIAN WEATHER APP</h1>
+			<input type="text" id="searchCity" style="font-size: 20px; border: 3px solid #000; margin: 10px auto;" placeholder="Search City" value="">
+			<br>
+			<div id="city-weather">
+				Temperature: <span id="cityTemp"> ---°C</span>
+				<br>
+				<br>
+				Min Temperature: <span id="minTemp"> ---°C</span>
+				<br>
+				<br>
+				Max Temperature: <span id="maxTemp"> ---°C</span>
+				<br>
+				<br>
+			</div>
+			<div id="city-img">
+				<img src="error.jpg" class="cityImage">
+			</div>
+			<button id="searchCityBtn" class="btn btn-warning" style="margin: 20px;">Search</button>
+			<br>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
